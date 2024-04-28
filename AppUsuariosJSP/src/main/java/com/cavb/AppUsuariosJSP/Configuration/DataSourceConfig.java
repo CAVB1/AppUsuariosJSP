@@ -11,9 +11,9 @@ public class DataSourceConfig {
     @Bean
     public DataSource dataSource (){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/cavblayerprogramming");
-        dataSource.setUsername("CAVBLayerProgramming");
+        dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
+        dataSource.setUrl("jdbc:oracle:thin:@localhost:1521/ORCL");
+        dataSource.setUsername("CVillegasProgramacionNCapas");
         dataSource.setPassword("password1");
         return dataSource;
     }
